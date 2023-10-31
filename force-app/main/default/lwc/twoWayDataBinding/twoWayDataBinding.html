@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Two Way Data Binding" icon-name="doctype:gform">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+            type="text"
+            value="Vanessa Hornbuckle"
+            label="Enter your name"
+            placeholder="enter here..."
+            onkeyup={hanleChangeName}
+            minlength=2
+            maxlength=20
+            required>
+            </lightning-input>
+            <lightning-input 
+            type="text"
+            value="Cook" 
+            class="slds-m-top_large"
+            label="Enter your title"
+            placeholder="enter here..."
+            onkeyup={handleChangeTitle}
+            minlength=2
+            maxlength=20
+            required>
+            </lightning-input>
+            <div>
+                Hello<br>
+                Thank you for your application. You have entered your name as <b>{inputName}</b> and your title as <b>{inputTittle}</b> . 
+            </div>
+        </div>
+    </lightning-card>
+</template>
